@@ -67,11 +67,11 @@ class Game extends React.Component {
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
           <span>
             row: <strong>{
-              move != this.state.stepNumber
+              move !== this.state.stepNumber
               ? this.rowColFromIdx(this.state.changedCells[move])['row']+1
               : ''
             }</strong> col: <strong>{
-              move != this.state.stepNumber
+              move !== this.state.stepNumber
               ? this.rowColFromIdx(this.state.changedCells[move])['col']+1
               : ''
             }
